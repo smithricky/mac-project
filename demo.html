@@ -1,0 +1,40 @@
+<button type="button" class="label custom-product-review collapsible-trigger collapsible-trigger-btn collapsible-trigger-btn--borders collapsible--auto-height" aria-controls="Product-content-5-{{ section_id }}">
+    <span class="stamped-product-reviews-badge stamped-main-badge" data-id="{{ product.id }}" data-product-title="{{ product.title | escape }}" data-product-type="{{ product.type }}" style="display: block;">{{ product.metafields.stamped.badge }}</span>
+    {% render 'collapsible-icons' %}
+    </button>
+
+
+
+
+    <div id="Product-content-5-{{ section_id }}" class="collapsible-content collapsible-content--all">
+       <div class="collapsible-content__inner product-reviews product-reviews--tab">
+          <div id="stamped-main-widget" class="stamped-main-widget" data-product-id="{{ product.id }}" data-name="{{ product.title | escape }}" data-url="{{ shop.url }}{{ product.url }}" data-image-url="{{ product.featured_image | product_img_url: "large" |replace: " ? ", " % 3F" | replace: "& "," % 26"}}" data-description="{{ product.description | escape }}" data-product-sku="{{product.handle}}" data-product-type="{{product.type}}"> {{ product.metafields.stamped.reviews }} 
+       </div>
+    </div>
+    </div>
+
+
+
+
+
+    <button type="button" class="label custom-product-review collapsible-trigger collapsible-trigger-btn collapsible-trigger-btn--borders collapsible--auto-height review-section" aria-controls="Product-content-5-{{ section_id }}">
+    <span class="stamped-product-reviews-badge stamped-main-badge" data-id="{{ product.id }}" data-product-title="{{ product.title | escape }}" data-product-type="{{ product.type }}" style="display: block;">{{ product.metafields.stamped.badge }}</span>
+   
+    </button>
+
+
+
+
+    <button type="button" class="label custom-product-review collapsible-trigger collapsible-trigger-btn collapsible-trigger-btn--borders collapsible--auto-height review-section" aria-controls="Product-content-5-{{ section_id }}">
+        <span class="stamped-product-reviews-badge stamped-main-badge" data-id="{{ product.id }}" data-product-title="{{ product.title | escape }}" data-product-type="{{ product.type }}" style="display: block;">{{ product.metafields.stamped.badge }}</span>
+        {% render 'collapsible-icons' %}
+        </button>
+        
+
+        
+    
+
+
+
+
+
